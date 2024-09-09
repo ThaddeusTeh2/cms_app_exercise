@@ -29,12 +29,17 @@
     case '/login':
       require 'pages/login.php';
       break;
+
     case '/signup':
       require 'pages/signup.php';
       break;
 
     case '/home':
       require 'pages/home.php';
+      break;
+
+    case '/dashboard':
+      require 'pages/dashboard.php';
       break;
 
     case '/post':
@@ -79,6 +84,6 @@
       
 
     default:
-      require 'pages/dashboard.php';
+      require 'pages/home.php';
       break;
   }
