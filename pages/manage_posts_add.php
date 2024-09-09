@@ -43,7 +43,7 @@
         </form>
       </div>
       <div class="text-center">
-        <a href="manage_posts.php" class="btn btn-link btn-sm"
+        <a href="/manage_posts" class="btn btn-link btn-sm"
           ><i class="bi bi-arrow-left"></i> Back to Posts</a
         >
       </div>

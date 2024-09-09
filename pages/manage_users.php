@@ -23,7 +23,7 @@
       <div class="d-flex justify-content-between align-items-center mb-2">
         <h1 class="h1">Manage Users</h1>
         <div class="text-end">
-          <a href="manage_users_add.php" class="btn btn-primary btn-sm"
+          <a href="/manage_users_add" class="btn btn-primary btn-sm"
             >Add New User</a
           >
         </div>
@@ -48,12 +48,12 @@
               <td class="text-end">
                 <div class="buttons">
                   <a
-                    href="manage_users_edit.php"
+                    href="/manage_users_edit"
                     class="btn btn-success btn-sm me-2"
                     ><i class="bi bi-pencil"></i
                   ></a>
                   <a
-                    href="manage_users_changepwd.php"
+                    href="/manage_users_changepwd"
                     class="btn btn-warning btn-sm me-2"
                     ><i class="bi bi-key"></i
                   ></a>
@@ -71,12 +71,12 @@
               <td class="text-end">
                 <div class="buttons">
                   <a
-                    href="manage_users_edit.php"
+                    href="/manage_users_edit"
                     class="btn btn-success btn-sm me-2"
                     ><i class="bi bi-pencil"></i
                   ></a>
                   <a
-                    href="manage_users_changepwd.php"
+                    href="/manage_users_changepwd"
                     class="btn btn-warning btn-sm me-2"
                     ><i class="bi bi-key"></i
                   ></a>
@@ -94,12 +94,12 @@
               <td class="text-end">
                 <div class="buttons">
                   <a
-                    href="manage_users_edit.php"
+                    href="/manage_users_edit"
                     class="btn btn-success btn-sm me-2"
                     ><i class="bi bi-pencil"></i
                   ></a>
                   <a
-                    href="manage_users_changepwd.php"
+                    href="/manage_users_changepwd"
                     class="btn btn-warning btn-sm me-2"
                     ><i class="bi bi-key"></i
                   ></a>
@@ -113,7 +113,7 @@
         </table>
       </div>
       <div class="text-center">
-        <a href="dashboard.php" class="btn btn-link btn-sm"
+        <a href="/dashboard" class="btn btn-link btn-sm"
           ><i class="bi bi-arrow-left"></i> Back to Dashboard</a
         >
       </div>
