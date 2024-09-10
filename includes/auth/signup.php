@@ -1,7 +1,6 @@
 
     
 <?php
-echo "TEST";
 
     //links db
     $database = connectToDB();
