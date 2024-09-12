@@ -1,4 +1,8 @@
-<?require "parts/header.php"?>
+<?
+
+checkIfuserIsNotLoggedIn();
+
+require "parts/header.php"?>
 
 
     <div class="container mx-auto my-5" style="max-width: 700px;">

@@ -23,3 +23,19 @@ function setError( $message, $redirect ) {
     header("Location: " . $redirect);
     exit;
 }
+
+// check if user is logged in or not
+function checkIfuserIsNotLoggedIn() {
+    if ( !isset( $_SESSION['user'] ) ) {
+      header("Location: /login");
+      exit;
+    }
+  }
+
+// check if current user is an admin or not
+function checkIfIsNotAdmin() {
+    if ( isset( $_SESSION['user'] ) && $_SESSION['user']['role'] != 'admin' ) {
+        header("Location: /dashboard");
+        exit;
+    }
+}

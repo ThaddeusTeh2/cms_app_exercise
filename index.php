@@ -10,6 +10,8 @@
 
   // figure out visited url
   $path = $_SERVER["REQUEST_URI"];
+  // remove all the query string from the URL
+  $path = parse_url( $path, PHP_URL_PATH );
 
 
 
@@ -23,6 +25,15 @@
     case '/auth/signup':
       require 'includes/auth/signup.php';
       break;
+    case '/user/add':
+      require 'includes/user/add.php';
+      break;
+    case '/user/delete':
+      require 'includes/user/delete.php';
+      break;
+      case '/user/edit':
+        require 'includes/user/edit.php';
+        break;
     
       
     // pages
@@ -87,3 +98,5 @@
       require 'pages/home.php';
       break;
   }
+
+  

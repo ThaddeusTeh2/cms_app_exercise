@@ -4,13 +4,11 @@
 <? if ( isset( $_SESSION['user'] ) ) : ?>
            
 
-    <div class="container mx-auto my-5" style="max-width: 500px;">
+    <div class="d-flex flex-column container mx-auto my-5" style="max-width: 500px;">
       <h1 class="h1 mb-4 text-center">My Blog</h1>
 
       <h4 class="text-center">Welcome back, <?= $_SESSION['user']['name']; ?>!</h4>
-           <a class=" m-3 btn btn-danger btn-sm" href="/logout">Logout</a>
       
-
 
       <div class="card mb-2">
         <div class="card-body">
@@ -48,6 +46,9 @@
           </div>
         </div>
       </div>
+
+      <a href="/dashboard" class="btn btn-link btn-sm">Dashboard</a>
+        <a href="/logout" class="btn btn-link btn-sm">Logout</a>
 
       <!--displays if not logged in-->
       <?php else : ?>
