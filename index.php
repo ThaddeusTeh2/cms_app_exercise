@@ -18,25 +18,38 @@
   //load relevant content
   switch( $path ) {
 
-    // actions
+    // actions *backend
     case '/auth/login':
       require 'includes/auth/login.php';
       break;
     case '/auth/signup':
       require 'includes/auth/signup.php';
       break;
+    
+    //user *backend
     case '/user/add':
       require 'includes/user/add.php';
       break;
     case '/user/delete':
       require 'includes/user/delete.php';
       break;
-      case '/user/edit':
-        require 'includes/user/edit.php';
+    case '/user/edit':
+      require 'includes/user/edit.php';
+      break;
+
+    //post *backend
+    case '/post/add':
+      require 'includes/post/add.php';
+      break;
+    case '/post/delete':
+      require 'includes/post/delete.php';
+      break;
+    case '/post/edit':
+      require 'includes/post/edit.php';
         break;
     
       
-    // pages
+    // pages * frontend
     case '/login':
       require 'pages/login.php';
       break;
@@ -69,7 +82,7 @@
       require 'pages/manage_users.php';
       break;
 
-    //managing pages
+    //managing pages *frontend
     
     case '/manage_posts_add':
       require 'pages/manage_posts_add.php';

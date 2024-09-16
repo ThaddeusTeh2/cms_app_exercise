@@ -58,10 +58,12 @@ checkIfIsNotAdmin();
                 <div class="buttons">
                 <a href="/manage_users_edit?id=<?= $user['id']; ?>" class="btn btn-success btn-sm me-2"><i class="bi bi-pencil"></i></a>
                 <a href="/manage_users_changepwd" class="btn btn-warning btn-sm me-2"><i class="bi bi-key"></i></a>
-
+                  
+                <form method="POST" action="user/delete">
                   <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete-user-<?= $user['id']; ?>">
                     <i class="bi bi-trash"></i>
                   </button>
+                </form>
 
                   <!-- Modal -->
                   <div class="modal fade" id="delete-user-<?= $user['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
